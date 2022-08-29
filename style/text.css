@@ -1,0 +1,46 @@
+/* Paragraphs */
+.text {
+  width: 75%;
+  transform: translateY(-50px);
+}
+
+.prgph {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+
+/* Links and Lists */
+.links-list {
+  list-style: none;
+  transform: translateY(-35px);
+  padding: 5px;
+  border: solid var(--link-border) 1px;
+  border-radius: 4px;
+}
+
+.list-items {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.hlink:link,
+.hlink:visited {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 4px 7px;
+  border-radius: 10px;
+}
+
+.hlink:hover {
+  color: var(--link-hover);
+  background-color: var(--link-hover-bg);
+}
+
+.hlink:active {
+  color: var(--link-selection);
+  background-color: var(--link-selection-bg);
+}

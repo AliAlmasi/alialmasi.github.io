@@ -1,0 +1,21 @@
+/* Heading and Subheading */
+.header {
+  border-bottom: var(--text-color) 2px;
+  margin-bottom: 20px;
+  transform: translateY(-50px);
+}
+
+.heading {
+  font-weight: 600;
+  color: var(--header-one-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px
+}
+
+.subheading {
+  font-weight: 500;
+  color: var(--header-two-color);
+  font-size: 21px;
+  letter-spacing: 1px;
+}
