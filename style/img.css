@@ -1,7 +1,7 @@
 /* Images and Logos */
 img {
   width: 150px;
-  border-radius: 100px;
+  border-radius: 55px;
   border: solid var(--link-border) 2px;
   transform: translateY(-50px);
 }
