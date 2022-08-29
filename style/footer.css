@@ -3,6 +3,7 @@
   background-color: var(--footer-bg);
   border: solid var(--footer-border) 1px;
   border-radius: 10px;
+  box-shadow: inset 0px -8px 10px var(--footer-shadow);
   width: 40vw;
   padding: 3px;
 }

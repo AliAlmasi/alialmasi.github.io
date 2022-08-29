@@ -21,6 +21,7 @@
 
   --link-color: #7f8c8d;
   --link-border: #6066808e;
+  --link-shadow: #00000030;
   --link-hover: #6797b8;
   --link-hover-bg: #3d416386;
   --link-selection: #7ccce6;
@@ -28,6 +29,7 @@
 
   --footer-bg: #758b8d11;
   --footer-border: #758b8d3f;
+  --footer-shadow: #00000020;
   --footer-link-color: #757d83;
   --footer-link-hover: #6797b8;
   --footer-link-hover-bg: #3d416370;
