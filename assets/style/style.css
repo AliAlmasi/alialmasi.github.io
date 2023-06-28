@@ -17,15 +17,24 @@
 
 /* Container and Flex */
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 50vw;
   height: 60vh;
   border-radius: 3.5rem;
   border: .1rem solid var(--border-color);
   background-color: var(--container-bg);
+  -webkit-box-shadow: 0 1rem 2rem var(--container-shadow);
   box-shadow: 0 1rem 2rem var(--container-shadow);
 }
 
@@ -33,6 +42,8 @@
 .image,
 .header,
 .text {
+  -webkit-transform: translateY(-7rem);
+  -ms-transform: translateY(-7rem);
   transform: translateY(-7rem);
 }
 
@@ -60,20 +71,30 @@
 
 /* Links and Lists */
 .links {
+  -webkit-transform: translateY(-4rem);
+  -ms-transform: translateY(-4rem);
   transform: translateY(-4rem);
 }
 
 .links-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   padding: .5rem 1rem;
   border: solid var(--link-border) .1rem;
   border-radius: .4rem;
+  -webkit-box-shadow: 0 1rem 1rem var(--link-shadow);
   box-shadow: 0 1rem 1rem var(--link-shadow);
 }
 
 .list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -102,6 +123,7 @@
   background-color: var(--footer-bg);
   border: solid var(--footer-border) .1rem;
   border-radius: 1rem;
+  -webkit-box-shadow: inset 0 -.8rem 1rem var(--footer-shadow);
   box-shadow: inset 0 -.8rem 1rem var(--footer-shadow);
   width: 40vw;
   padding: .3rem;

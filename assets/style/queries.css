@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 100em) {
   .prgph {
     font-size: 1.4rem;
@@ -115,18 +122,23 @@
   }
 
   .text {
+    -webkit-transform: translateY(-6rem);
+    -ms-transform: translateY(-6rem);
     transform: translateY(-6rem)
   }
 }
 
 @media (max-width: 21.25em) {
   .links-list {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: .5rem;
   }
 
   .list-items {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
