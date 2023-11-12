@@ -106,6 +106,10 @@
   .logo {
     display: none;
   }
+
+  .footer .logo {
+    display: contents;
+  }
 }
 
 @media (max-width: 26.875em) {
