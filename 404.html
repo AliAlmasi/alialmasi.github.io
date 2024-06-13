@@ -16,6 +16,10 @@
 				margin: 0;
 				padding: 0;
 				box-sizing: border-box;
+
+				--black: #0f0f0f;
+				--white: #f0f0f0;
+				user-select: none;
 			}
 			html {
 				font-size: 62.5%;
@@ -29,14 +33,14 @@
 				justify-content: center;
 				align-items: center;
 				gap: 1.4rem;
-				background-color: black;
-				color: white;
+				background-color: var(--black);
+				color: var(--white);
 				text-align: center;
 				padding: 1rem;
 			}
 			h1 {
 				font-size: 4rem;
-				border-bottom: 1px solid gray;
+				border-bottom: 1px solid var(--white);
 				padding-bottom: 0.6rem;
 			}
 			p {
@@ -45,15 +49,15 @@
 			}
 			a:link,
 			a:visited {
-				color: white;
+				color: var(--white);
 				text-decoration: none;
-				border-bottom: 1px dashed gray;
+				border-bottom: 1px dashed var(--white);
 				font-size: 3rem;
 			}
 			a:hover,
 			a:focus,
 			a:active {
-				border-bottom: 1px solid white;
+				border-bottom: 1px solid var(--white);
 				outline: none;
 			}
 			@media (max-width: 21.25em) {

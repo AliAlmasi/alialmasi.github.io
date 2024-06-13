@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>almasi.gpg.asc</title>
+		<style>
+			*,
+			*::before,
+			*::after {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+
+				--black: #0f0f0f;
+				--white: #f0f0f0;
+				cursor: default;
+				user-select: none;
+			}
+			html {
+				font-size: 62.5%;
+				background-color: var(--black);
+				color: var(--white);
+				font-family: monospace;
+			}
+			body {
+				font-size: 4rem;
+				height: 100dvh;
+				overflow: hidden;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+			.download-btn {
+				color: var(--white);
+				padding: 1rem 2rem;
+				border: 1px solid var(--white);
+				text-transform: uppercase;
+				line-height: 1.5;
+			}
+			.download-btn:hover {
+				color: var(--black);
+				background-color: var(--white);
+			}
+			@media (max-width: 37.75em) {
+				body {
+					font-size: 3rem;
+				}
+			}
+			@media (max-width: 28.875em) {
+				body {
+					font-size: 2rem;
+				}
+			}
+			@media (max-width: 20em) {
+				.download-btn {
+					border: none;
+				}
+			}
+		</style>
+		<link rel="icon" href="/assets/img/gpg.svg" type="image/svg+xml" />
+		<script>
+			function downloadURI(uri, name) {
+				var link = document.createElement("a");
+				link.setAttribute("download", name);
+				link.href = uri;
+				document.body.appendChild(link);
+				link.click();
+				link.remove();
+			}
+		</script>
+	</head>
+	<body>
+		<strong
+			><span
+				class="download-btn"
+				onclick="downloadURI('./gpg.asc', 'almasi.gpg.asc')"
+				>Click here to get my public gpg key</span
+			></strong
+		>
+	</body>
+</html>
