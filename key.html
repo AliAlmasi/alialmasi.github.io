@@ -33,16 +33,22 @@
 				align-items: center;
 				text-align: center;
 			}
-			.download-btn {
+			.download-btn:link,
+			.download-btn:visited {
+				text-decoration: none;
 				color: var(--white);
 				padding: 1rem 2rem;
 				border: 1px solid var(--white);
 				text-transform: uppercase;
 				line-height: 1.5;
+				font-weight: bold;
 			}
-			.download-btn:hover {
+			.download-btn:hover,
+			.download-btn:focus {
 				color: var(--black);
 				background-color: var(--white);
+				outline: none;
+				border: none;
 			}
 			@media (max-width: 37.75em) {
 				body {
@@ -55,30 +61,17 @@
 				}
 			}
 			@media (max-width: 20em) {
-				.download-btn {
+				.download-btn:link,
+				.download-btn:visited {
 					border: none;
 				}
 			}
 		</style>
 		<link rel="icon" href="/assets/img/gpg.svg" type="image/svg+xml" />
-		<script>
-			function downloadURI(uri, name) {
-				var link = document.createElement("a");
-				link.setAttribute("download", name);
-				link.href = uri;
-				document.body.appendChild(link);
-				link.click();
-				link.remove();
-			}
-		</script>
 	</head>
 	<body>
-		<strong
-			><span
-				class="download-btn"
-				onclick="downloadURI('./gpg.asc', 'almasi.gpg.asc')"
-				>Click here to get my public gpg key</span
-			></strong
+		<a class="download-btn" href="almasi.asc" download
+			>Click here to get my public gpg key</a
 		>
 	</body>
 </html>
